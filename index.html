@@ -6,22 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Questions</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+      integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main class="project">
       <h1 class="project-title">Project title</h1>
       <p class="project-desc">descriptions</p>
       <section class="question-box">
-        <h2 class="question-title">Question</h2>
+        <div class="question-title-box">
+          <h2 class="question-title">Question</h2>
+          <div class="ctrl-box">
+            <button class="ctrl">
+              <i class="fas fa-check"></i>
+            </button>
+            <button class="ctrl">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </div>
         <ul class="answer-board">
+          <li class="answer">
+            <span>Answer</span>
+            <div class="ctrl-box">
+              <button class="ctrl">
+                <i class="fas fa-check"></i>
+              </button>
+              <button class="ctrl">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+          </li>
           <li class="answer">Answer</li>
           <li class="answer">Answer</li>
           <li class="answer">Answer</li>
           <li class="answer">Answer</li>
           <li class="answer">Answer</li>
           <li class="answer">Answer</li>
-          <li class="answer">Answer</li>
+          <button class="answer add-answer-btn">
+            <i class="fas fa-plus"></i>
+          </button>
         </ul>
+      </section>
+      <section class="question-box">
+        <button class="question-title-box add-question-btn">
+          New question
+        </button>
       </section>
     </main>
   </body>

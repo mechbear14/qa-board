@@ -27,23 +27,99 @@
   margin-top: 0.5rem;
 }
 
+.project .question-box .question-title-box {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px #ddd solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project .question-box .add-question-btn {
+  padding: 0.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project .question-box .question-title-box .ctrl-box {
+  display: none;
+}
+
+.project .question-box .question-title-box:hover > .ctrl-box {
+  display: inherit;
+}
+
+.project .question-box .ctrl {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #ddd;
+  border-radius: 50%;
+  color: #999;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 0.2rem;
+}
+
 .project .question-box .question-title {
   font-size: 2.4rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px #ddd solid;
 }
 
 .project .question-box .answer-board {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.5rem;
   list-style: none;
   margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .project .question-box .answer-board {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 850px) {
+  .project .question-box .answer-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .project .question-box .answer-board {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .project .question-box .answer-board .answer {
   padding: 0.5rem;
   border: 1px #ddd solid;
   border-radius: 0.5rem;
+  min-height: 3.4rem;
+  position: relative;
+}
+
+.project .question-box .answer .ctrl-box {
+  display: none;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.project .question-box .answer:hover > .ctrl-box {
+  display: inherit;
+}
+
+.project .question-box .ctrl {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #ddd;
+  border-radius: 50%;
+  color: #999;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 0.2rem;
 }
