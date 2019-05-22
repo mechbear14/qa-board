@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.project .project-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.project .project-desc {
+  font-size: 1.2rem;
+}
+
+.project .question-box {
+  margin-top: 0.5rem;
+}
+
+.project .question-box .question-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px #ddd solid;
+}
+
+.project .question-box .answer-board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+}
+
+.project .question-box .answer-board .answer {
+  padding: 0.5rem;
+  border: 1px #ddd solid;
+  border-radius: 0.5rem;
+}
